@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automobiles</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: cream;
+            font-size: 16px;
+        }
+        header {
+            background-color: skyblue;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            overflow-x: auto; 
+        }
+        .column {
+            flex: 1;
+            background-color: lightgray; 
+            padding: 20px;
+            border-radius: 5px;
+            box-sizing: border-box;
+            margin-right: 20px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        .container::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        @media screen and (max-width: 768px) {
+            .container {
+                align-items: stretch;
+            }
+            .column {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Automobile's Details</h1></h1>
+    </header>
+    <nav>
+        <a href="#">View  |</a>
+        <a href="#">Book  |</a>
+        <a href="#">Comments</a>
+    </nav>
+    <p>India is the world’s third-largest automobile market, the largest manufacturer of three-wheelers, passenger vehicles, and tractors, and the second-largest manufacturer of two-wheelers.The automotive industry in India is the fourth-largest in the world as per 2021 statistics. In 2022, India became fourth largest country in the world by valuation of automotive industry. India is well known for its automotive products such as three wheeler, four wheeler and two wheeler. Automotive products such as tires and batteries manufacturing in India are also globally flourished.</p>
+    <div class="container">
+        <div class="column">
+            <h2>Growing Demand</h2>
+	    <ul>
+            <li>Rising middle-class income and a huge youth population will result in strong demand.</li>
+            <li>In November 2023, the total production of passenger vehicles*, three-wheelers, two-wheelers, and quadricycles was 2.22 million units.</li>
+            <li>The global EV market was estimated at approximately US$ 250 billion in 2021 and by 2028, it is projected to grow by 5 times to US$ 1,318 billion.</li>
+	    </ul>
+        </div>
+        <div class="column">
+            <h2>Opportunity</h2>
+	    <ul>
+            <li>India could be a leader in shared mobility by 2030, providing opportunities for electric and autonomous vehicles.</li>
+            <li>Focus is shifting to electric vehicles to reduce emissions.</li>
+            <li>By 2030, the Indian government has committed that 30% of the new vehicle sales in India would be electric.</li>
+	    </ul>
+        </div>
+        <div class="column">
+            <h2>Rising Investment</h2>
+	    <ul>
+            <li>The automobile sector received a cumulative equity FDI inflow of about US$ 35.40 billion between April 2000 - September 2023.</li>
+            <li>India is on track to become the largest EV market by 2030, with a total investment opportunity of more than US$ 200 billion over the next 8-10 years.</li>
+            <li>FAME Scheme was extended for a further period of 2 years up to March 31st, 2024.</li>
+	    </ul>
+        </div>
+    </div>
+</body>
+</html>
